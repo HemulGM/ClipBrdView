@@ -60,6 +60,7 @@ type
     FHistoryDate: TDate;
     FCalendarPopup: TFormPopup;
     FCalHand: Boolean;
+    FLastBuf: string;
     procedure ClosePopup;
     procedure ReadBuffer(Save: Boolean);
     procedure ReadBufAsImage(Save: Boolean);
@@ -237,9 +238,13 @@ end;
 procedure TFromMain.ReadBufAsText(Save: Boolean);
 var
   Item: THistoryItem;
+  Buf: string;
 begin
   IsHistory := False;
-  SetText(Clipboard.AsText);
+  Buf := Clipboard.AsText;
+  if Buf = FLastBuf then Exit;  
+  FLastBuf := Buf;
+  SetText(FLastBuf);
   if Save then
   begin
     Item.Date := DateOf(Now);
@@ -254,14 +259,17 @@ procedure TFromMain.ReadBuffer(Save: Boolean);
 begin
   if Clipboard.HasFormat(CF_BITMAP) then
   begin
+    FLastBuf := '';
     ReadBufAsImage(Save);
   end
   else if Clipboard.HasFormat(CF_TEXT) then
-  begin
+  begin            
+    //FLastBuf := '';
     ReadBufAsText(Save);
   end
   else if Clipboard.HasFormat(CF_HDROP) then
-  begin
+  begin              
+    FLastBuf := '';
     ReadBufAsDropFiles(Save);
   end;
 end;
