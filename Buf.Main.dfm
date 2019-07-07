@@ -33,10 +33,6 @@ object FromMain: TFromMain
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitLeft = 0
-    ExplicitTop = 41
-    ExplicitWidth = 587
-    ExplicitHeight = 303
     object PanelStream: TPanel
       Left = 0
       Top = 40
@@ -45,10 +41,6 @@ object FromMain: TFromMain
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitLeft = 200
-      ExplicitTop = 128
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object MemoStream: TMemo
         Left = 0
         Top = 0
@@ -57,8 +49,6 @@ object FromMain: TFromMain
         Align = alClient
         BorderStyle = bsNone
         TabOrder = 0
-        ExplicitWidth = 570
-        ExplicitHeight = 303
       end
       object ScrollBarStream: TScrollBar
         Left = 686
@@ -69,9 +59,6 @@ object FromMain: TFromMain
         Kind = sbVertical
         PageSize = 0
         TabOrder = 1
-        ExplicitLeft = 368
-        ExplicitTop = 64
-        ExplicitHeight = 121
       end
     end
     object PanelText: TPanel
@@ -82,10 +69,6 @@ object FromMain: TFromMain
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 200
-      ExplicitTop = 128
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object MemoText: TMemo
         Left = 0
         Top = 0
@@ -96,8 +79,6 @@ object FromMain: TFromMain
         ReadOnly = True
         ScrollBars = ssBoth
         TabOrder = 0
-        ExplicitWidth = 402
-        ExplicitHeight = 303
       end
     end
     object PanelTools: TPanel
@@ -108,7 +89,6 @@ object FromMain: TFromMain
       Align = alTop
       BevelOuter = bvNone
       TabOrder = 3
-      ExplicitWidth = 704
       object ButtonFlatRefresh: TButtonFlat
         Left = 0
         Top = 0
@@ -158,13 +138,12 @@ object FromMain: TFromMain
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 4
-      ExplicitWidth = 704
       object LabelBuf: TLabel
         AlignWithMargins = True
         Left = 3
         Top = 3
         Width = 141
-        Height = 16
+        Height = 24
         Align = alLeft
         Caption = #1044#1072#1085#1085#1099#1077' '#1073#1091#1092#1077#1088#1072' '#1086#1073#1084#1077#1085#1072
         Font.Charset = DEFAULT_CHARSET
@@ -174,6 +153,7 @@ object FromMain: TFromMain
         Font.Style = []
         ParentFont = False
         Layout = tlCenter
+        ExplicitHeight = 16
       end
     end
     object PanelFiles: TPanel
@@ -184,8 +164,6 @@ object FromMain: TFromMain
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 5
-      ExplicitTop = 48
-      ExplicitWidth = 704
       object ListViewFiles: TListView
         Left = 0
         Top = 0
@@ -206,10 +184,6 @@ object FromMain: TFromMain
         RowSelect = True
         TabOrder = 0
         ViewStyle = vsReport
-        ExplicitLeft = 224
-        ExplicitTop = 168
-        ExplicitWidth = 250
-        ExplicitHeight = 150
       end
     end
     object PanelImage: TDrawPanel
@@ -223,9 +197,6 @@ object FromMain: TFromMain
       BevelOuter = bvNone
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 0
-      ExplicitWidth = 402
-      ExplicitHeight = 303
       object Image: TImage
         AlignWithMargins = True
         Left = 3
@@ -250,8 +221,6 @@ object FromMain: TFromMain
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 1
-    ExplicitTop = 41
-    ExplicitHeight = 463
     object TableExHistory: TTableEx
       Left = 0
       Top = 40
@@ -347,7 +316,6 @@ object FromMain: TFromMain
         SubTextFont.Height = -13
         SubTextFont.Name = 'Tahoma'
         SubTextFont.Style = []
-        ExplicitHeight = 40
       end
     end
     object Panel1: TPanel
@@ -385,8 +353,6 @@ object FromMain: TFromMain
         TabOrder = 0
         TextHint = #1055#1086#1080#1089#1082' ...'
         OnChange = ButtonFlatSearchClick
-        ExplicitLeft = 46
-        ExplicitWidth = 120
       end
       object ButtonFlatSearch: TButtonFlat
         AlignWithMargins = True
@@ -431,9 +397,6 @@ object FromMain: TFromMain
         SubTextFont.Name = 'Tahoma'
         SubTextFont.Style = []
         ShowCaption = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitHeight = 40
       end
       object ButtonFlatSearchClear: TButtonFlat
         AlignWithMargins = True
@@ -478,7 +441,6 @@ object FromMain: TFromMain
         SubTextFont.Name = 'Tahoma'
         SubTextFont.Style = []
         ShowCaption = False
-        ExplicitLeft = 233
       end
       object ButtonFlatDate: TButtonFlat
         AlignWithMargins = True
@@ -523,8 +485,6 @@ object FromMain: TFromMain
         SubTextFont.Name = 'Tahoma'
         SubTextFont.Style = []
         ShowCaption = False
-        ExplicitLeft = 233
-        ExplicitTop = 0
       end
     end
   end
@@ -561,7 +521,7 @@ object FromMain: TFromMain
     Left = 570
     Top = 256
     Bitmap = {
-      494C010105000800280018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C0101050008002C0018001800FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000600000003000000001002000000000000048
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

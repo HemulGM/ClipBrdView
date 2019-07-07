@@ -123,7 +123,7 @@ begin
   FCalHand := True;
   CalendarView.Date := FHistoryDate;
   FCalHand := False;
-  FCalendarPopup := TFormPopup.CreatePopup(Self, CalendarView, ClosePopup, Pt.X, Pt.Y, False, True);
+  FCalendarPopup := TFormPopup.CreatePopup(Self, CalendarView, ClosePopup, Pt.X, Pt.Y, [psShadow, psAnimate]);
 end;
 
 procedure TFromMain.ButtonFlatDropClick(Sender: TObject);
